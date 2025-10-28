@@ -1,0 +1,212 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #1a2a6c);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .container {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 800px;
+            padding: 40px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        h1 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 2.8rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+        
+        .subtitle {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        
+        .date-display {
+            background: rgba(0, 0, 0, 0.25);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 25px 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .date-box {
+            margin: 10px;
+            text-align: center;
+        }
+        
+        .date-label {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        
+        .date-value {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 15px;
+            min-width: 100px;
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .counter {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 30px 0;
+        }
+        
+        .time-unit {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            padding: 20px 15px;
+            min-width: 120px;
+            transition: transform 0.3s ease;
+        }
+        
+        .time-unit:hover {
+            transform: translateY(-5px);
+            background: rgba(0, 0, 0, 0.4);
+        }
+        
+        .time-value {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #FFD700;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+        
+        .time-label {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1.1rem;
+            margin-top: 8px;
+        }
+        
+        .explanation {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 30px;
+            text-align: left;
+            color: white;
+        }
+        
+        .explanation h2 {
+            margin-bottom: 15px;
+            color: #FFD700;
+        }
+        
+        .explanation p {
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+        
+        .update-info {
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 20px;
+            font-style: italic;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 16px 0;
+            
+            /* Optional: add a border or background color */
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .time-unit {
+                min-width: 90px;
+                padding: 15px 10px;
+            }
+            
+            .time-value {
+                font-size: 2.2rem;
+            }
+            
+            .date-value {
+                font-size: 1.8rem;
+                min-width: 80px;
+                padding: 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .counter {
+                gap: 10px;
+                align-items: center;
+                justify-content: center;
+            }
+            .container {
+                margin: 0 auto;
+            }
+            body {
+                align-items: center;
+            }
+            
+            .time-unit {
+                min-width: 70px;
+                padding: 12px 8px;
+            }
+            
+            .time-value {
+                font-size: 1.8rem;
+            }
+            
+            .time-label {
+                font-size: 0.9rem;
+            }
+
+            .center-content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    min-height: 100vh;
+                    align-items: center;
+                }
+            }

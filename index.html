@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Elapsed Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>TIC TIC japan</h1>
+        <p class="subtitle">Total time spent in japan</p>
+        
+        <div class="date-display">
+            <div class="date-box">
+                <div class="date-label">Start Date</div>
+                <input type="date" id="start-date-input" value="2022-07-13" style="background: rgba(255,255,255,0.15); border-radius: 8px; padding: 8px; color: #222; font-size: 1.1rem; border: none; display: block; width: 100%; max-width: 250px;">
+                <button id="calculate-btn" style="margin-top:12px; padding:10px 0; width:100%; max-width:250px; border-radius:8px; border:none; background:#0078d4; color:#fff; font-size:1.1rem; cursor:pointer; display:block;">Calculate</button>
+            </div>
+            <div class="date-box" style="margin-top: 24px;">
+                <div class="date-label">Current Date</div>
+                <div class="date-value" id="current-date" style="font-size:2rem; font-weight:bold; margin-top:10px;">Loading...</div>
+            </div>
+        </div>
+        
+        <div class="center-content">
+            <div class="counter">
+                <div class="time-unit">
+                    <div class="time-value" id="years">0</div>
+                    <div class="time-label">Years</div>
+                </div>
+                <div class="time-unit">
+                    <div class="time-value" id="months">0</div>
+                    <div class="time-label">Months</div>
+                </div>
+                <div class="time-unit">
+                    <div class="time-value" id="days">0</div>
+                    <div class="time-label">Days</div>
+                </div>
+                <div class="time-unit">
+                    <div class="time-value" id="hours">0</div>
+                    <div class="time-label">Hours</div>
+                </div>
+                <div class="time-unit">
+                    <div class="time-value" id="minutes">0</div>
+                    <div class="time-label">Minutes</div>
+                </div>
+                <div class="time-unit">
+                    <div class="time-value" id="seconds">0</div>
+                    <div class="time-label">Seconds</div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Made with ❤️ by アディ</p>
+            </div>
+        </div>
+       
+        
+        
+        
+    <!-- <p class="update-info">Last updated: <span id="update-time">Just now</span></p> -->
+    
+
+<script src="func.js"></script>
+</body>
+</html>
